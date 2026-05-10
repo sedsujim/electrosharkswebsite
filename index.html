@@ -20,12 +20,16 @@
         /* Navegación */
         nav {
             background-color: var(--primary-blue);
-            padding: 1rem 5%;
+            padding: 0.8rem 5%;
             display: flex; justify-content: space-between; align-items: center;
             position: sticky; top: 0; z-index: 1000;
             border-bottom: 3px solid var(--secondary-red);
         }
-        nav .logo-text { color: var(--white); font-weight: bold; font-size: 1.4rem; letter-spacing: 1px; text-transform: uppercase; }
+        
+        /* Estilos para el nuevo logo */
+        .logo-container { display: flex; align-items: center; }
+        .logo-img { height: 50px; width: auto; display: block; }
+
         nav ul { list-style: none; display: flex; gap: 20px; }
         nav ul li a { color: var(--white); text-decoration: none; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
         nav ul li a:hover { color: var(--secondary-red); }
@@ -67,13 +71,20 @@
 
         footer { text-align: center; padding: 30px; font-size: 0.8rem; background: #111; color: #888; }
 
-        @media (max-width: 768px) { header h1 { font-size: 2.5rem; } nav { flex-direction: column; padding: 1rem; } nav ul { margin-top: 15px; } }
+        @media (max-width: 768px) { 
+            header h1 { font-size: 2.5rem; } 
+            nav { flex-direction: column; padding: 1rem; } 
+            nav ul { margin-top: 15px; } 
+            .logo-img { height: 40px; } /* Logo un poco más pequeño en móviles */
+        }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo-text">ELECTROSHARKS #21544</div>
+        <div class="logo-container">
+            <img src="logo.png" alt="Electrosharks Logo" class="logo-img">
+        </div>
         <ul>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#logros">Logros</a></li>
@@ -112,21 +123,19 @@
 
     <section id="objetivo">
         <h2>Objetivo: Copa Ka'i 2026</h2>
-        <p>Queremos volver para competir por el campeonato y alcanzar el <strong>Inspire Award</strong>, el máximo galardón que otorga FIRST Tech Challenge[cite: 2]. Con tu apoyo, llegaremos con un robot más competitivo y todo el aprendizaje obtenido en nuestras experiencias internacionales[cite: 2].</p>
+        <p>Queremos volver para competir por el campeonato y alcanzar el <strong>Inspire Award</strong>, el máximo galardón que otorga FIRST Tech Challenge. Con tu apoyo, llegaremos con un robot más competitivo y todo el aprendizaje obtenido en nuestras experiencias internacionales.</p>
     </section>
 
     <section class="contact-section" id="contacto">
         <h2 style="border: none; padding: 0; display: block;">Únete a nuestra misión</h2>
         <p>Apoya al equipo que está poniendo el nombre de Venezuela en alto.</p>
-        
-        <!-- Botón de PDF -->
+
         <a href="pdf/patrocinio.pdf" target="_blank" class="btn-action">Descargar Carta de Patrocinio</a>
 
         <div class="direct-contact">
             <p><i class="fas fa-envelope"></i> electrosharksvzla@gmail.com</p>
         </div>
 
-        <!-- Iconos de Redes Sociales -->
         <div class="social-links">
             <a href="https://www.instagram.com/electrosharks_ftc/" target="_blank" title="Instagram">
                 <i class="fab fa-instagram"></i>
