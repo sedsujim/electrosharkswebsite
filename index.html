@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrosharks #21544 | Portafolio</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="public/images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -27,7 +28,9 @@
             font-family: "Helvetica Neue", Arial, sans-serif;
         }
 
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
 
         body {
             background: var(--light-bg);
@@ -81,7 +84,9 @@
             transition: 0.25s ease;
         }
 
-        nav ul li a:hover { color: var(--secondary-red); }
+        nav ul li a:hover {
+            color: var(--secondary-red);
+        }
 
         header {
             color: var(--white);
@@ -188,7 +193,9 @@
             transform: translateY(-2px);
         }
 
-        section { padding: 78px 8%; }
+        section {
+            padding: 78px 8%;
+        }
 
         .section-title {
             max-width: 1050px;
@@ -249,14 +256,18 @@
             color: var(--secondary-red);
         }
 
-        .tab-btn:hover { background: #f1f5fb; }
+        .tab-btn:hover {
+            background: #f1f5fb;
+        }
 
         .tab-btn.active {
             background: var(--primary-blue);
             color: var(--white);
         }
 
-        .tab-btn.active i { color: var(--white); }
+        .tab-btn.active i {
+            color: var(--white);
+        }
 
         .content-card {
             background: var(--white);
@@ -267,12 +278,25 @@
             min-height: 560px;
         }
 
-        .tab-panel { display: none; animation: fadeUp 0.25s ease both; }
-        .tab-panel.active { display: block; }
+        .tab-panel {
+            display: none;
+            animation: fadeUp 0.25s ease both;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
 
         @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .panel-kicker {
@@ -383,7 +407,9 @@
             margin: 14px 0 0 18px;
         }
 
-        .list li { margin-bottom: 8px; }
+        .list li {
+            margin-bottom: 8px;
+        }
 
         .timeline {
             display: grid;
@@ -432,8 +458,14 @@
             color: var(--accent-gray);
         }
 
-        .direct-contact p { margin: 10px 0; }
-        .direct-contact i { color: var(--secondary-red); margin-right: 10px; }
+        .direct-contact p {
+            margin: 10px 0;
+        }
+
+        .direct-contact i {
+            color: var(--secondary-red);
+            margin-right: 10px;
+        }
 
         .social-links {
             display: flex;
@@ -467,8 +499,14 @@
                 gap: 12px;
             }
 
-            nav ul { gap: 14px; }
-            .portfolio-shell { grid-template-columns: 1fr; }
+            nav ul {
+                gap: 14px;
+            }
+
+            .portfolio-shell {
+                grid-template-columns: 1fr;
+            }
+
             .tabs {
                 position: static;
                 display: grid;
@@ -477,23 +515,60 @@
         }
 
         @media (max-width: 640px) {
-            section { padding: 58px 5%; }
-            header { padding: 82px 5% 72px; }
-            .logo-img { height: 40px; }
-            .tabs { grid-template-columns: 1fr; }
-            .split { grid-template-columns: 1fr; }
-            .content-card { min-height: auto; }
-            .contact-card { padding: 30px 20px; }
-            .hero-actions { flex-direction: column; }
-            .btn-action, .btn-secondary { width: 100%; }
+            section {
+                padding: 58px 5%;
+            }
+
+            header {
+                padding: 82px 5% 72px;
+            }
+
+            .logo-img {
+                height: 40px;
+            }
+
+            .tabs {
+                grid-template-columns: 1fr;
+            }
+
+            .split {
+                grid-template-columns: 1fr;
+            }
+
+            .content-card {
+                min-height: auto;
+            }
+
+            .contact-card {
+                padding: 30px 20px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .btn-action,
+            .btn-secondary {
+                width: 100%;
+            }
+        }
+
+        .logojj {
+            height: 203px;
+            background-color: white;
+            border-style: solid;
+                border-width: 1px;
+                border-color: lightgray;
+                border-radius: 20px;
         }
     </style>
 </head>
+
 <body>
 
     <nav>
         <div class="logo-container">
-            <img src="logo.png" alt="Electrosharks Logo" class="logo-img">
+            <img src="public/images/logo.png" alt="Electrosharks Logo" class="logo-img">
             <span>Electrosharks #21544</span>
         </div>
         <ul>
@@ -506,12 +581,16 @@
 
     <header id="inicio">
         <div class="hero-content">
+            <img src="public/images/sinfiltro.webp" alt="Electrosharks Team" class="logojj">
+            <br>
             <div class="eyebrow"><i class="fas fa-robot"></i> FIRST Tech Challenge</div>
             <h1>Electrosharks</h1>
-            <p>Equipo de robótica del Instituto Americano Joseph John Thomson. Estudiantes de 1er a 5to año unidos por una sola pasión: la robótica.</p>
+            <p>Equipo de robótica del Instituto Americano Joseph John Thomson. Estudiantes de 1er a 5to año unidos por
+                una sola pasión: la robótica.</p>
             <div class="hero-actions">
                 <a href="#portafolio" class="btn-action"><i class="fas fa-folder-open"></i> Ver portafolio</a>
-                <a href="pdf/patrocinio.pdf" target="_blank" class="btn-secondary"><i class="fas fa-file-pdf"></i> Carta de patrocinio</a>
+                <a href="public/pdf/patrocinio.pdf" target="_blank" class="btn-secondary"><i
+                        class="fas fa-file-pdf"></i> Carta de patrocinio</a>
             </div>
         </div>
     </header>
@@ -519,30 +598,44 @@
     <section id="portafolio">
         <div class="section-title">
             <h2>Portafolio por secciones</h2>
-            <p>Selecciona una sección para ver la información del equipo, integrantes, metas, diseño del robot y aprendizajes técnicos.</p>
+            <p>Selecciona una sección para ver la información del equipo, integrantes, metas, diseño del robot y
+                aprendizajes técnicos.</p>
         </div>
 
         <div class="portfolio-shell">
             <div class="tabs" role="tablist" aria-label="Secciones del portafolio Electrosharks">
-                <button class="tab-btn active" type="button" data-target="panel-nosotros" role="tab" aria-selected="true"><i class="fas fa-water"></i> Nosotros</button>
-                <button class="tab-btn" type="button" data-target="panel-integrantes" role="tab" aria-selected="false"><i class="fas fa-users"></i> Integrantes</button>
-                <button class="tab-btn" type="button" data-target="panel-valores" role="tab" aria-selected="false"><i class="fas fa-star"></i> Valores y metas</button>
-                <button class="tab-btn" type="button" data-target="panel-sustain" role="tab" aria-selected="false"><i class="fas fa-seedling"></i> Sustain</button>
-                <button class="tab-btn" type="button" data-target="panel-design" role="tab" aria-selected="false"><i class="fas fa-drafting-compass"></i> Design process</button>
-                <button class="tab-btn" type="button" data-target="panel-intake" role="tab" aria-selected="false"><i class="fas fa-gears"></i> Intake</button>
-                <button class="tab-btn" type="button" data-target="panel-transfer" role="tab" aria-selected="false"><i class="fas fa-arrow-right-arrow-left"></i> Transfer</button>
-                <button class="tab-btn" type="button" data-target="panel-connect" role="tab" aria-selected="false"><i class="fas fa-handshake-angle"></i> Connect</button>
+                <button class="tab-btn active" type="button" data-target="panel-nosotros" role="tab"
+                    aria-selected="true"><i class="fas fa-water"></i> Nosotros</button>
+                <button class="tab-btn" type="button" data-target="panel-integrantes" role="tab"
+                    aria-selected="false"><i class="fas fa-users"></i> Integrantes</button>
+                <button class="tab-btn" type="button" data-target="panel-valores" role="tab" aria-selected="false"><i
+                        class="fas fa-star"></i> Valores y metas</button>
+                <button class="tab-btn" type="button" data-target="panel-sustain" role="tab" aria-selected="false"><i
+                        class="fas fa-seedling"></i> Sustain</button>
+                <button class="tab-btn" type="button" data-target="panel-design" role="tab" aria-selected="false"><i
+                        class="fas fa-drafting-compass"></i> Design process</button>
+                <button class="tab-btn" type="button" data-target="panel-intake" role="tab" aria-selected="false"><i
+                        class="fas fa-gears"></i> Intake</button>
+                <button class="tab-btn" type="button" data-target="panel-transfer" role="tab" aria-selected="false"><i
+                        class="fas fa-arrow-right-arrow-left"></i> Transfer</button>
+                <button class="tab-btn" type="button" data-target="panel-connect" role="tab" aria-selected="false"><i
+                        class="fas fa-handshake-angle"></i> Connect</button>
             </div>
 
             <div class="content-card">
                 <article class="tab-panel active" id="panel-nosotros" role="tabpanel">
                     <div class="panel-kicker">Meet the sharks</div>
                     <h3>Somos Electrosharks</h3>
-                    <p class="lead">Somos un equipo de FIRST Tech Challenge del Instituto Americano Joseph John Thomson. Nuestro equipo está impulsado por el ingenio de estudiantes de 1er año a 5to año, unidos por una sola pasión: la robótica.</p>
-                    <p>Desde 2023 hemos sido una fuerza motriz en la Copa Ka’i. También tuvimos la oportunidad de participar en el Italy Regional Championship 2026, donde competimos contra 37 equipos de alrededor del mundo, quedamos en el 11vo puesto en playoffs y ganamos el Reach Award 2026.</p>
+                    <p class="lead">Somos un equipo de FIRST Tech Challenge del Instituto Americano Joseph John Thomson.
+                        Nuestro equipo está impulsado por el ingenio de estudiantes de 1er año a 5to año, unidos por una
+                        sola pasión: la robótica.</p>
+                    <p>Desde 2023 hemos sido una fuerza motriz en la Copa Ka’i. También tuvimos la oportunidad de
+                        participar en el Italy Regional Championship 2026, donde competimos contra 37 equipos de
+                        alrededor del mundo, quedamos en el 11vo puesto en playoffs y ganamos el Reach Award 2026.</p>
                     <div class="note-box">
                         <strong>“We are ready to bite”</strong><br>
-                        Nuestro slogan representa que estamos preparados para enfrentar cualquier desafío con la determinación de un tiburón. Más que competidores, somos embajadores de la misión de FIRST.
+                        Nuestro slogan representa que estamos preparados para enfrentar cualquier desafío con la
+                        determinación de un tiburón. Más que competidores, somos embajadores de la misión de FIRST.
                     </div>
                     <div class="grid">
                         <div class="card">
@@ -565,28 +658,89 @@
                     <h3>Integrantes del equipo</h3>
                     <p class="lead">Roles principales, temporadas y rookies del equipo Electrosharks.</p>
                     <div class="grid">
-                        <div class="card member-card"><h4>Samuel Ortega</h4><p class="role">Captain · CAD Designer</p><p class="season">3rd season</p></div>
-                        <div class="card member-card"><h4>Jorge Parra</h4><p class="role">Head Programmer · Driver</p><p class="season">2nd season</p></div>
-                        <div class="card member-card"><h4>Ayah Chams</h4><p class="role">PR · Social Media</p><p class="season">1st season</p><span class="badge">Rookie</span></div>
-                        <div class="card member-card"><h4>Fabiana Corona</h4><p class="role">Portfolio · Human Player</p><p class="season">3rd season</p></div>
-                        <div class="card member-card"><h4>Sofía Pérez</h4><p class="role">Portfolio · Spokesperson</p><p class="season">3rd season</p></div>
-                        <div class="card member-card"><h4>Jose Ortigoza</h4><p class="role">Mechanics</p><p class="season">2nd season</p></div>
-                        <div class="card member-card"><h4>Heberto Andrade</h4><p class="role">Spokesperson · Portfolio</p><p class="season">1st season</p><span class="badge">Rookie</span></div>
-                        <div class="card member-card"><h4>Sergio Osorio</h4><p class="role">Mechanics</p><p class="season">2nd season</p></div>
-                        <div class="card member-card"><h4>Ana Ortiz</h4><p class="role">Finances</p><p class="season">2nd season</p></div>
-                        <div class="card member-card"><h4>Marcos Ortega</h4><p class="role">Driver · Mechanic</p><p class="season">1st season</p><span class="badge">Rookie</span></div>
-                        <div class="card member-card"><h4>Simón Thielens</h4><p class="role">CAD Designer</p><p class="season">1st season</p><span class="badge">Rookie</span></div>
-                        <div class="card member-card"><h4>Sebastian Suárez</h4><p class="role">Programmer</p><p class="season">1st season</p><span class="badge">Rookie</span></div>
-                        <div class="card member-card"><h4>Sofía Camargo</h4><p class="role">PR · Social Media</p><p class="season">1st season</p><span class="badge">Rookie</span></div>
-                        <div class="card member-card"><h4>Erwin González</h4><p class="role">Mechanics</p><p class="season">1st season</p><span class="badge">Rookie</span></div>
-                        <div class="card member-card"><h4>Darin Yarbouh</h4><p class="role">Social Media</p><p class="season">3rd season</p></div>
+                        <div class="card member-card">
+                            <h4>Samuel Ortega</h4>
+                            <p class="role">Captain · CAD Designer</p>
+                            <p class="season">3rd season</p>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Jorge Parra</h4>
+                            <p class="role">Head Programmer · Driver</p>
+                            <p class="season">2nd season</p>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Ayah Chams</h4>
+                            <p class="role">PR · Social Media</p>
+                            <p class="season">1st season</p><span class="badge">Rookie</span>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Fabiana Corona</h4>
+                            <p class="role">Portfolio · Human Player</p>
+                            <p class="season">3rd season</p>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Sofía Pérez</h4>
+                            <p class="role">Portfolio · Spokesperson</p>
+                            <p class="season">3rd season</p>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Jose Ortigoza</h4>
+                            <p class="role">Mechanics</p>
+                            <p class="season">2nd season</p>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Heberto Andrade</h4>
+                            <p class="role">Spokesperson · Portfolio</p>
+                            <p class="season">1st season</p><span class="badge">Rookie</span>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Sergio Osorio</h4>
+                            <p class="role">Mechanics</p>
+                            <p class="season">2nd season</p>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Ana Ortiz</h4>
+                            <p class="role">Finances</p>
+                            <p class="season">2nd season</p>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Marcos Ortega</h4>
+                            <p class="role">Driver · Mechanic</p>
+                            <p class="season">1st season</p><span class="badge">Rookie</span>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Simón Thielens</h4>
+                            <p class="role">CAD Designer</p>
+                            <p class="season">1st season</p><span class="badge">Rookie</span>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Sebastian Suárez</h4>
+                            <p class="role">Programmer</p>
+                            <p class="season">1st season</p><span class="badge">Rookie</span>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Sofía Camargo</h4>
+                            <p class="role">PR · Social Media</p>
+                            <p class="season">1st season</p><span class="badge">Rookie</span>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Erwin González</h4>
+                            <p class="role">Mechanics</p>
+                            <p class="season">1st season</p><span class="badge">Rookie</span>
+                        </div>
+                        <div class="card member-card">
+                            <h4>Darin Yarbouh</h4>
+                            <p class="role">Social Media</p>
+                            <p class="season">3rd season</p>
+                        </div>
                     </div>
                 </article>
 
                 <article class="tab-panel" id="panel-valores" role="tabpanel">
                     <div class="panel-kicker">Team goals</div>
                     <h3>Valores y metas de aprendizaje</h3>
-                    <p class="lead">El equipo combina metas técnicas, comunicación, creatividad y crecimiento personal.</p>
+                    <p class="lead">El equipo combina metas técnicas, comunicación, creatividad y crecimiento personal.
+                    </p>
                     <div class="split">
                         <div class="card">
                             <h4>Valores del equipo</h4>
@@ -605,7 +759,8 @@
                             <h4>Metas individuales registradas</h4>
                             <ul class="list">
                                 <li><strong>Samuel:</strong> perfeccionar sus habilidades en diseño 3D.</li>
-                                <li><strong>Sofía Pérez:</strong> mejorar sus habilidades de redacción y habilidades sociales.</li>
+                                <li><strong>Sofía Pérez:</strong> mejorar sus habilidades de redacción y habilidades
+                                    sociales.</li>
                                 <li><strong>Sofía Camargo:</strong> aprender a editar y hacer videos virales.</li>
                                 <li><strong>Erwin:</strong> aprender los conceptos básicos de la mecánica.</li>
                             </ul>
@@ -616,14 +771,27 @@
                 <article class="tab-panel" id="panel-sustain" role="tabpanel">
                     <div class="panel-kicker">Sustain</div>
                     <h3>Crecimiento sostenible del equipo</h3>
-                    <p class="lead">La sostenibilidad del equipo se trabaja desde la formación de rookies, el uso de herramientas como impresión 3D y la planificación de temporadas completas.</p>
+                    <p class="lead">La sostenibilidad del equipo se trabaja desde la formación de rookies, el uso de
+                        herramientas como impresión 3D y la planificación de temporadas completas.</p>
                     <div class="grid">
-                        <div class="card"><h4>Rookies</h4><p>Incorporación de nuevos integrantes para asegurar continuidad del equipo.</p></div>
-                        <div class="card"><h4>Impresora 3D</h4><p>Uso de fabricación propia para prototipar, mejorar piezas y resolver necesidades técnicas.</p></div>
-                        <div class="card"><h4>Sostenibilidad económica</h4><p>Organización de recursos para sostener el trabajo competitivo durante varias temporadas.</p></div>
+                        <div class="card">
+                            <h4>Rookies</h4>
+                            <p>Incorporación de nuevos integrantes para asegurar continuidad del equipo.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Impresora 3D</h4>
+                            <p>Uso de fabricación propia para prototipar, mejorar piezas y resolver necesidades
+                                técnicas.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Sostenibilidad económica</h4>
+                            <p>Organización de recursos para sostener el trabajo competitivo durante varias temporadas.
+                            </p>
+                        </div>
                     </div>
                     <div class="note-box">
-                        Este año el equipo quiso empezar a trabajar desde enero a pesar de las dificultades, y se propuso la meta de comenzar desde septiembre, justo cuando esté el reto oficial.
+                        Este año el equipo quiso empezar a trabajar desde enero a pesar de las dificultades, y se
+                        propuso la meta de comenzar desde septiembre, justo cuando esté el reto oficial.
                     </div>
                     <div class="pill-list">
                         <span class="pill">Pre-season</span>
@@ -638,19 +806,25 @@
                 <article class="tab-panel" id="panel-design" role="tabpanel">
                     <div class="panel-kicker">Design process</div>
                     <h3>Proceso de diseño de Electro</h3>
-                    <p class="lead">El equipo definió periodos específicos para la parte técnica del robot, priorizando CAD, construcción, programación y autonomía.</p>
+                    <p class="lead">El equipo definió periodos específicos para la parte técnica del robot, priorizando
+                        CAD, construcción, programación y autonomía.</p>
                     <div class="timeline">
-                        <div class="timeline-item"><strong>Abril · CAD</strong>Todo el mes fue dedicado a perfeccionar al máximo el diseño CAD del robot.</div>
-                        <div class="timeline-item"><strong>Primeros 20 días de mayo · Construcción</strong>Construcción completa de Electro, llevando el diseño al robot físico.</div>
-                        <div class="timeline-item"><strong>Resto del periodo · Programación y autónomo</strong>Enfoque en el punto técnico más débil: programación y periodo autónomo.</div>
-                        <div class="timeline-item"><strong>Resultado · ELECTRÓN</strong>El proyecto más ambicioso que el team Electrosharks ha llevado a cabo.</div>
+                        <div class="timeline-item"><strong>Abril · CAD</strong>Todo el mes fue dedicado a perfeccionar
+                            al máximo el diseño CAD del robot.</div>
+                        <div class="timeline-item"><strong>Primeros 20 días de mayo · Construcción</strong>Construcción
+                            completa de Electro, llevando el diseño al robot físico.</div>
+                        <div class="timeline-item"><strong>Resto del periodo · Programación y autónomo</strong>Enfoque
+                            en el punto técnico más débil: programación y periodo autónomo.</div>
+                        <div class="timeline-item"><strong>Resultado · ELECTRÓN</strong>El proyecto más ambicioso que el
+                            team Electrosharks ha llevado a cabo.</div>
                     </div>
                 </article>
 
                 <article class="tab-panel" id="panel-intake" role="tabpanel">
                     <div class="panel-kicker">Robot mechanics</div>
                     <h3>Del intake de SILEX al intake de Electro</h3>
-                    <p class="lead">El intake anterior usaba ligas sobre engranajes diseñados en 3D. Era fácil de reparar, pero mostró límites importantes durante competencia.</p>
+                    <p class="lead">El intake anterior usaba ligas sobre engranajes diseñados en 3D. Era fácil de
+                        reparar, pero mostró límites importantes durante competencia.</p>
                     <div class="split">
                         <div class="card">
                             <h4>Problemas del intake anterior</h4>
@@ -663,20 +837,32 @@
                         </div>
                         <div class="card">
                             <h4>Solución en Electro</h4>
-                            <p>Electro usa Gecko wheels de GoBilda, 4 vector wheels de cada lado, recorrido diseñado en 3D, 2 sensores de color y una pared protectora de fibra de carbono para proteger el sistema.</p>
+                            <p>Electro usa Gecko wheels de GoBilda, 4 vector wheels de cada lado, recorrido diseñado en
+                                3D, 2 sensores de color y una pared protectora de fibra de carbono para proteger el
+                                sistema.</p>
                         </div>
                     </div>
                     <div class="grid">
-                        <div class="card"><h4>Más rápido</h4><p>Recolecciones más eficaces gracias a la presión adecuada sobre los artifacts.</p></div>
-                        <div class="card"><h4>Más resistente</h4><p>Mejor protección frente a impactos y contacto durante partidas.</p></div>
-                        <div class="card"><h4>Asistencia al driver</h4><p>Luces LED indican cuando el robot tomó los 3 artifacts reglamentarios.</p></div>
+                        <div class="card">
+                            <h4>Más rápido</h4>
+                            <p>Recolecciones más eficaces gracias a la presión adecuada sobre los artifacts.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Más resistente</h4>
+                            <p>Mejor protección frente a impactos y contacto durante partidas.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Asistencia al driver</h4>
+                            <p>Luces LED indican cuando el robot tomó los 3 artifacts reglamentarios.</p>
+                        </div>
                     </div>
                 </article>
 
                 <article class="tab-panel" id="panel-transfer" role="tabpanel">
                     <div class="panel-kicker">From indexing to transferring</div>
                     <h3>De indexer a transfer mechanism</h3>
-                    <p class="lead">SILEX usaba un indexer con 3 cucharas para llevar los artifacts al shooter. Fue innovador, pero generó retos mecánicos y de programación.</p>
+                    <p class="lead">SILEX usaba un indexer con 3 cucharas para llevar los artifacts al shooter. Fue
+                        innovador, pero generó retos mecánicos y de programación.</p>
                     <div class="split">
                         <div class="card">
                             <h4>Desventajas del indexer</h4>
@@ -689,7 +875,9 @@
                         </div>
                         <div class="card">
                             <h4>Nuevo transfer mechanism</h4>
-                            <p>El sistema se basa en rieles personalizados para los artifacts. Luego son empujados por una serie de Gecko wheels de GoBilda hacia el shooter, donde una compliant wheel completa la transferencia.</p>
+                            <p>El sistema se basa en rieles personalizados para los artifacts. Luego son empujados por
+                                una serie de Gecko wheels de GoBilda hacia el shooter, donde una compliant wheel
+                                completa la transferencia.</p>
                         </div>
                     </div>
                 </article>
@@ -697,14 +885,26 @@
                 <article class="tab-panel" id="panel-connect" role="tabpanel">
                     <div class="panel-kicker">Connect</div>
                     <h3>Mentores y comunidad</h3>
-                    <p class="lead">Nuestros mentores ayudan al equipo con determinación, disciplina y acompañamiento durante el proceso.</p>
+                    <p class="lead">Nuestros mentores ayudan al equipo con determinación, disciplina y acompañamiento
+                        durante el proceso.</p>
                     <div class="note-box">
-                        En el portafolio recibido, esta sección aparece incompleta. Dejé una base editable para que puedan ampliar el texto de mentores, outreach, innovate y control cuando tengan el contenido final.
+                        En el portafolio recibido, esta sección aparece incompleta. Dejé una base editable para que
+                        puedan ampliar el texto de mentores, outreach, innovate y control cuando tengan el contenido
+                        final.
                     </div>
                     <div class="grid">
-                        <div class="card"><h4>Mentoría</h4><p>Acompañamiento técnico y humano para sostener el ritmo de trabajo.</p></div>
-                        <div class="card"><h4>Disciplina</h4><p>Organización y seguimiento para convertir ideas en resultados.</p></div>
-                        <div class="card"><h4>Comunidad</h4><p>Espacio reservado para agregar iniciativas de outreach y conexión externa.</p></div>
+                        <div class="card">
+                            <h4>Mentoría</h4>
+                            <p>Acompañamiento técnico y humano para sostener el ritmo de trabajo.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Disciplina</h4>
+                            <p>Organización y seguimiento para convertir ideas en resultados.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Comunidad</h4>
+                            <p>Espacio reservado para agregar iniciativas de outreach y conexión externa.</p>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -715,7 +915,8 @@
         <div class="contact-card">
             <h2>Únete a nuestra misión</h2>
             <p>Apoya al equipo que está poniendo el nombre de Venezuela en alto.</p>
-            <a href="pdf/patrocinio.pdf" target="_blank" class="btn-action"><i class="fas fa-file-download"></i> Descargar carta de patrocinio</a>
+            <a href="pdf/patrocinio.pdf" target="_blank" class="btn-action"><i class="fas fa-file-download"></i>
+                Descargar carta de patrocinio</a>
         </div>
     </section>
 
@@ -729,10 +930,12 @@
             </div>
 
             <div class="social-links">
-                <a href="https://www.instagram.com/electrosharks_ftc/" target="_blank" title="Instagram" aria-label="Instagram Electrosharks">
+                <a href="https://www.instagram.com/electrosharks_ftc/" target="_blank" title="Instagram"
+                    aria-label="Instagram Electrosharks">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.tiktok.com/@electrosharks_ftc" target="_blank" title="TikTok" aria-label="TikTok Electrosharks">
+                <a href="https://www.tiktok.com/@electrosharks_ftc" target="_blank" title="TikTok"
+                    aria-label="TikTok Electrosharks">
                     <i class="fab fa-tiktok"></i>
                 </a>
             </div>
@@ -779,4 +982,5 @@
     </script>
 
 </body>
+
 </html>
