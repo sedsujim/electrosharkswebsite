@@ -104,9 +104,10 @@ header::after {
     z-index: 1;
     max-width: 960px;
     margin: 0 auto;
+    padding-bottom: 5rem;
 }
 
-/* Imagen de Cabecera Optimizada y Redimensionada */
+
 .logojj {
     max-width: 100%;
     height: auto;
@@ -118,11 +119,11 @@ header::after {
     transition: width 0.3s ease;
 }
 
-/* NUEVO: Control adaptativo para la imagen del nombre */
+
 .brand-name {
-    max-width: 90%;          /* Evita que toque los bordes en pantallas medianas */
-    height: auto;            /* Mantiene la proporción perfecta sin deformar */
-    max-height: 105px;       /* Su tamaño original y máximo en PC */
+    max-width: 90%;          
+    height: auto;            
+    max-height: 105px;       
     margin: 15px auto;
     display: inline-block;
     transition: max-height 0.3s ease;
@@ -238,7 +239,7 @@ h2 {
     position: relative;
 }
 
-/* Botón Hamburguesa del Portafolio */
+
 .portfolio-hamburger {
     display: none;
     width: 100%;
@@ -368,7 +369,7 @@ h2 {
     margin-top: 22px;
 }
 
-/* Scroll personalizado para la cuadrícula de Integrantes */
+
 .scrollable-grid {
     max-height: 480px; 
     overflow-y: auto;
@@ -550,7 +551,7 @@ footer {
     color: #b7b7b7;
 }
 
-/* Media Query Adaptativo */
+
 @media (max-width: 920px) {
     nav {
         flex-direction: column;
@@ -561,7 +562,6 @@ footer {
         gap: 14px;
     }
 
-    /* Redimensionamiento extra del logo en pantallas móviles */
     .logojj {
         width: 140px;
     }
@@ -570,12 +570,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* Mostrar botón hamburguesa del portafolio */
+
     .portfolio-hamburger {
         display: inline-flex;
     }
 
-    /* Ocultar pestañas por defecto en móvil para que actúen como un menú desplegable */
+
     .tabs-menu {
         display: none;
         position: absolute;
@@ -589,7 +589,6 @@ footer {
         animation: fadeUp 0.2s ease both;
     }
 
-    /* Mostrar al presionar el botón hamburguesa */
     .tabs-menu.open {
         display: block;
     }
